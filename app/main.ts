@@ -11,8 +11,8 @@ rl.prompt();
 rl.on('line', (input) => {
   if (input === 'exit') {
     rl.close();
-  } else {
-    console.log(`${input}: command not found`);
-    rl.prompt();
+    return;
   }
+  console.log(`${input}: command not found`);
+  rl.prompt();
 });
