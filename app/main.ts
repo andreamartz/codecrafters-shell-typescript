@@ -21,7 +21,7 @@ rl.on('line', (input: string): void => {
     if (BUILTINS.has(restOfInputAfterType)) {
       console.log(`${restOfInputAfterType} is a shell builtin`);
     } else {
-      console.log(`${input}: not found`);
+      console.log(`${restOfInputAfterType}: not found`);
     }
   } else {
     console.log(`${input}: command not found`);
